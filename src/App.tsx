@@ -2,9 +2,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ConfigProvider } from 'antd';
 import { AuthProvider } from './contexts/AuthContext';
 import Layout from './components/Layout';
+import LoginOverlay from './components/LoginOverlay';
 import Home from './pages/Home';
 import Calculator from './pages/Calculator';
-import Login from './pages/Login';
 import AllergensPublic from './pages/AllergensPublic';
 import NutritionInfo from './pages/NutritionInfo';
 import Categories from './pages/admin/Categories';
@@ -28,14 +28,15 @@ function App() {
     <ConfigProvider theme={theme}>
       <AuthProvider>
         <BrowserRouter>
+          {/* Login overlay blocks access for non-authenticated users */}
+          <LoginOverlay />
+          
           <Layout>
             <Routes>
-              {/* Public routes */}
               <Route path="/" element={<Home />} />
               <Route path="/calculator" element={<Calculator />} />
               <Route path="/allergens" element={<AllergensPublic />} />
               <Route path="/nutrition-info" element={<NutritionInfo />} />
-              <Route path="/login" element={<Login />} />
               
               {/* Admin routes */}
               <Route path="/admin/categories" element={<Categories />} />

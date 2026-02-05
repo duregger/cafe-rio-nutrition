@@ -73,12 +73,10 @@ export default function Layout({ children }: LayoutProps) {
             <span className="nav-label">Admin</span>
           </Link>
           
-          {currentUser ? (
-            <Dropdown menu={{ items: [{ key: 'logout', label: 'Logout', icon: <LogoutOutlined />, onClick: () => logout() }] }}>
+          {currentUser && (
+            <Dropdown menu={{ items: [{ key: 'logout', label: 'Logout', icon: <LogoutOutlined />, onClick: () => { logout(); navigate('/'); } }] }}>
               <Avatar icon={<UserOutlined />} size="small" className="user-avatar" />
             </Dropdown>
-          ) : (
-            <Link to="/login" className="login-btn">Login</Link>
           )}
           
           <button className="menu-btn" onClick={() => setDrawerOpen(true)}>

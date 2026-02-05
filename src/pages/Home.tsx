@@ -175,11 +175,10 @@ export default function Home() {
         style={{ background: 'linear-gradient(to right, #F93A26, #d62f1e)' }}
       >
         <Title level={1} className="!text-white !mb-3 md:!mb-4 !text-2xl md:!text-3xl lg:!text-4xl">
-          Cafe Rio Nutrition Guide
+          Cafe Rio Nutrition Manager
         </Title>
         <Paragraph className="text-sm md:text-lg max-w-2xl mx-auto mb-4 md:mb-6 px-2" style={{ color: '#F9E4CA' }}>
-          Make informed decisions about your meals. Calculate nutritional content, 
-          view allergen information, and build healthier combinations.
+          Manage menu items, nutritional data, and allergen information in one place.
         </Paragraph>
         <Button 
           size="large"
@@ -215,12 +214,25 @@ export default function Home() {
         ))}
       </Row>
 
-      {/* Info Footer */}
+      {/* Welcome Info */}
       <Card style={{ backgroundColor: '#F2E7DC' }} className="border-none">
-        <div className="text-center py-2 md:py-4">
-          <Paragraph style={{ color: '#382827' }} className="mb-0 text-xs md:text-sm">
-            All nutrition and allergen data is provided as a guide. Menu items may vary by location.
-            Please inform your server of any allergies before ordering.
+        <div className="py-2 md:py-4">
+          <Title level={4} className="!mb-3 !text-base md:!text-lg" style={{ color: '#382827' }}>
+            Welcome to the Cafe Rio Nutrition Manager
+          </Title>
+          <Paragraph style={{ color: '#382827' }} className="!mb-2 text-xs md:text-sm">
+            This is a proof-of-concept nutrition management system for Cafe Rio. Here's what you can do:
+          </Paragraph>
+          <ul className="text-xs md:text-sm space-y-1 pl-4" style={{ color: '#382827' }}>
+            <li><strong>Calculator</strong> — Build meals and see real-time nutrition totals</li>
+            <li><strong>Nutrition Info</strong> — Browse all menu items with full nutritional data</li>
+            <li><strong>Allergen Guide</strong> — Filter items by allergens and dietary preferences</li>
+            <li><strong>Admin Panel</strong> — Manage categories, items, nutrition data, and allergens</li>
+            <li><strong>PDF Export</strong> — Generate a complete nutrition & allergen report</li>
+            <li><strong>REST API</strong> — Public endpoints for other platforms to consume menu and nutrition data</li>
+          </ul>
+          <Paragraph style={{ color: '#666' }} className="!mb-0 !mt-3 text-xs">
+            API Base: <code className="bg-white px-1 py-0.5 rounded text-xs">https://us-central1-cafe-rio-nutrition.cloudfunctions.net/api</code>
           </Paragraph>
         </div>
       </Card>
