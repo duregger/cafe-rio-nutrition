@@ -1,0 +1,6288 @@
+{
+  "categories": [
+    "Add-Ins",
+    "Appetizers",
+    "Beans",
+    "Beverages - 20 oz",
+    "Beverages - 32 oz",
+    "Bowl Builds",
+    "Bowls - Build Your Own",
+    "Cheese",
+    "Custom - ADD",
+    "Custom - EXTRA",
+    "Custom - on the SIDE",
+    "Dessert",
+    "Dressing",
+    "Enchilada Style",
+    "Extra Protein",
+    "Kids Meals",
+    "Lettuce",
+    "Protein",
+    "Rice",
+    "Sauce",
+    "Sides",
+    "Toppings",
+    "Tortilla"
+  ],
+  "items": [
+    {
+      "name": "6\" Flour Tortilla - 1 ea",
+      "category": "Add-Ins",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Elotes - 2 oz",
+      "category": "Add-Ins",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Guacamole - 1 scoop",
+      "category": "Add-Ins",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Queso - 2 fl oz",
+      "category": "Add-Ins",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Roasted Seasonal Veg - 2 oz",
+      "category": "Add-Ins",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Chips & Guac - Large",
+      "category": "Appetizers",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Chips & Guac - Regular",
+      "category": "Appetizers",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Chips & Queso - Large",
+      "category": "Appetizers",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Chips & Queso - Regular",
+      "category": "Appetizers",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Chips & Salsa (Corn) - Large",
+      "category": "Appetizers",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Chips & Salsa (Corn) - Regular",
+      "category": "Appetizers",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Chips & Salsa (Habanero) - Large",
+      "category": "Appetizers",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Chips & Salsa (Habanero) - Regular",
+      "category": "Appetizers",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Chips & Salsa (Pico) - Large",
+      "category": "Appetizers",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Chips & Salsa (Pico) - Regular",
+      "category": "Appetizers",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Chips & Salsa (Salsa Fresca) - Large",
+      "category": "Appetizers",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Chips & Salsa (Salsa Fresca) - Regular",
+      "category": "Appetizers",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Elotes",
+      "category": "Appetizers",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Black Beans - 4 oz",
+      "category": "Beans",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Black Beans - 8 oz",
+      "category": "Beans",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Half & Half - 4 oz",
+      "category": "Beans",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Half & Half - 8 oz",
+      "category": "Beans",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Pinto Beans - 4 oz",
+      "category": "Beans",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Pinto Beans - 8 oz",
+      "category": "Beans",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Barq's Root Beer",
+      "category": "Beverages - 20 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Black Tea",
+      "category": "Beverages - 20 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Cherry Coke",
+      "category": "Beverages - 20 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Coffee",
+      "category": "Beverages - 20 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Coke",
+      "category": "Beverages - 20 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Coke - Diet - Caffeine Free",
+      "category": "Beverages - 20 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Coke Zero",
+      "category": "Beverages - 20 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Diet Coke",
+      "category": "Beverages - 20 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Dr. Pepper",
+      "category": "Beverages - 20 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Dr. Pepper - Diet",
+      "category": "Beverages - 20 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Fanta Orange",
+      "category": "Beverages - 20 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Fresh Squeezed OJ",
+      "category": "Beverages - 20 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Hi-C Fruit Punch",
+      "category": "Beverages - 20 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Hibiscus Raspberry Decaf Tea",
+      "category": "Beverages - 20 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Horchata",
+      "category": "Beverages - 20 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Mango Lemonade",
+      "category": "Beverages - 20 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Mint Limeade",
+      "category": "Beverages - 20 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Minute Maid Lemonade",
+      "category": "Beverages - 20 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Powerade Mountain Blast",
+      "category": "Beverages - 20 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Sprite",
+      "category": "Beverages - 20 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Strawberry Lemonade",
+      "category": "Beverages - 20 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Barq's Root Beer",
+      "category": "Beverages - 32 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Black Tea",
+      "category": "Beverages - 32 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Cherry Coke",
+      "category": "Beverages - 32 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Coffee",
+      "category": "Beverages - 32 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Coke",
+      "category": "Beverages - 32 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Coke - Diet - Caffeine Free",
+      "category": "Beverages - 32 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Coke Zero",
+      "category": "Beverages - 32 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Diet Coke",
+      "category": "Beverages - 32 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Dr. Pepper",
+      "category": "Beverages - 32 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Dr. Pepper - Diet",
+      "category": "Beverages - 32 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Fanta Orange",
+      "category": "Beverages - 32 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Fresh Squeezed OJ",
+      "category": "Beverages - 32 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Hi-C Fruit Punch",
+      "category": "Beverages - 32 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Hibiscus Raspberry Decaf Tea",
+      "category": "Beverages - 32 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Horchata",
+      "category": "Beverages - 32 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Mango Lemonade",
+      "category": "Beverages - 32 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Mint Limeade",
+      "category": "Beverages - 32 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Minute Maid Lemonade",
+      "category": "Beverages - 32 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Powerade Mountain Blast",
+      "category": "Beverages - 32 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Sprite",
+      "category": "Beverages - 32 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Strawberry Lemonade",
+      "category": "Beverages - 32 oz",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Chicken & Elotes",
+      "category": "Bowl Builds",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Chicken Fajita",
+      "category": "Bowl Builds",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Pollo Asado First Timers",
+      "category": "Bowl Builds",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Steak Fajita",
+      "category": "Bowl Builds",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Sweet Pork First Timers",
+      "category": "Bowl Builds",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Veggie",
+      "category": "Bowl Builds",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Add-Ins: Elotes",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Add-Ins: Flour Tortilla 6\" - Side",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Add-Ins: Guacamole",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Add-Ins: Roasted Seasonal Veggies",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Beans: Black Beans",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Beans: Double Black Beans",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Beans: Double Pinto Beans",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Beans: Half & Half",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Beans: Pinto Beans",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Extra: Baja Shrimp",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": true,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Extra: Beef Barbacoa",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Extra: Black Beans",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Extra: Cilantro Lime Rice",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Extra: Coconut Shrimp",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": true,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Extra: Fajita Veggies",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Extra: Fire-Grilled Chicken",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Extra: Fire-Grilled Steak",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Extra: Pinto Beans",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Extra: Pollo Asado",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Extra: Roasted Seasonal Veggies",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Extra: Shredded Chicken Breast",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Extra: Shredded Lettuce",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Extra: Sweet Pork Barbacoa",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Protein: Baja Shrimp",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": true,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Protein: Beef Barbacoa",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Protein: Coconut Shrimp",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": true,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Protein: Fire-Grilled Chicken",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Protein: Fire-Grilled Steak",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Protein: Pollo Asado",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Protein: Roasted Seasonal Veggies",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Protein: Shredded Chicken Breast",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Protein: Sweet Pork Barbacoa",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Protein: Veggie (Guacamole)",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Rice: Cilantro Lime Rice",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Rice: Double Cilantro Lime Rice",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Toppings: Avocado Corn Salsa",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Toppings: Chile Lime Tortilla Strips",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Toppings: Chipotle Ranch Dressing",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Toppings: Cilantro",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Toppings: Cilantro Lime Vinaigrette",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Toppings: Cotija Cheese",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Toppings: Grilled Fajita Veggies",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Toppings: Hot Roasted Red Chile Sauce",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Toppings: Hotter Habanero Sauce",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Toppings: House Creamy Tomatillo Dressing",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Toppings: Jalapeno",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Toppings: Lime Wedge",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Toppings: Medium Hatch Green Chile Sauce",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Toppings: Mild Roasted Tomatillo Sauce",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Toppings: Pico De Gallo",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Toppings: Salsa Fresca",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Toppings: Salsa Roja",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Toppings: Shredded Cheese - 50/50 Jack & Blend",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Toppings: Shredded Cheese - Monterey Jack",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Toppings: Shredded Cheese - Monterey Jack & Cheddar",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Toppings: Shredded Lettuce",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Toppings: Sour Cream",
+      "category": "Bowls - Build Your Own",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Queso - 3 oz",
+      "category": "Cheese",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Shredded Cheese - 3 oz",
+      "category": "Cheese",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Avocado Corn Salsa - 2 fl oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Black Beans - 4 oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Chile Lime Tortilla Strips - 1 oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Chipotle Ranch Dressing - 2 fl oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Chipotle Ranch Dressing - 4 fl oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Cilantro",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Cilantro Lime Rice - 4 oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Cilantro Lime Vinaigrette - 2 fl oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Cilantro Lime Vinaigrette - 4 fl oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Cotija Cheese - 2/3 tsp",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Elotes - 2 oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Grilled Fajita Veggies - 1 oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Guacamole - 1 scoop",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Hot Roasted Red Chile Sauce - 2 fl oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Hotter Habanero Sauce - 2 fl oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "House Creamy Tomatillo Dressing - 2 fl oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "House Creamy Tomatillo Dressing - 4 fl oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Jalapeno - 2 oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Lime Wedge - 1/6",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Medium Hatch Green Chile Sauce - 2 fl oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Mild Roasted Tomatillo Sauce - 2 fl oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Pico De Gallo - 2 oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Queso - 2 fl oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Roasted Seasonal Veg - 2 oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Salsa Fresca - 2 fl oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Salsa Roja - 2 fl oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Shredded Cheese - 2 oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Shredded Lettuce - 1 oz",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Sour Cream - 1 scoop",
+      "category": "Custom - ADD",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "6\" Flour Tortilla - 1 ea",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Avocado Corn Salsa - 2 fl oz",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Chile Lime Tortilla Strips - 1 oz",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Chipotle Ranch Dressing - 2 fl oz",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Cilantro",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Cilantro Lime Vinaigrette - 4 fl oz",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Cotija Cheese - 2/3 tsp",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Elotes - 2 oz",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Grilled Fajita Veggies - 1 oz",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Guacamole - 1 scoop",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Hot Roasted Red Chile Sauce - 2 fl oz",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Hotter Habanero Sauce - 2 fl oz",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "House Creamy Tomatillo Dressing - 4 fl oz",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Jalapeno - 2 oz",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Lime Wedge - 1/6",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Medium Hatch Green Chile Sauce - 2 fl oz",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Mild Roasted Tomatillo Sauce - 2 fl oz",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Pico De Gallo - 2 oz",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Queso - 2 fl oz",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Roasted Seasonal Veg - 2 oz",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Salsa Fresca - 2 fl oz",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Salsa Roja - 2 fl oz",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Shredded Cheese - 2 oz",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Shredded Lettuce - 1 oz",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Sour Cream - 1 scoop",
+      "category": "Custom - EXTRA",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Avocado Corn Salsa - 2 fl oz",
+      "category": "Custom - on the SIDE",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Chile Lime Tortilla Strips - 1 oz",
+      "category": "Custom - on the SIDE",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Cilantro",
+      "category": "Custom - on the SIDE",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Cotija Cheese - 2/3 tsp",
+      "category": "Custom - on the SIDE",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Elotes - 2 oz",
+      "category": "Custom - on the SIDE",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Grilled Fajita Veggies - 1 oz",
+      "category": "Custom - on the SIDE",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Guacamole - 1 scoop",
+      "category": "Custom - on the SIDE",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Hot Roasted Red Chile Sauce - 2 fl oz",
+      "category": "Custom - on the SIDE",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Hotter Habanero Sauce - 2 fl oz",
+      "category": "Custom - on the SIDE",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Jalapeno - 2 oz",
+      "category": "Custom - on the SIDE",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Lettuce - .5 oz",
+      "category": "Custom - on the SIDE",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Lime Wedge - 1/6",
+      "category": "Custom - on the SIDE",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Medium Hatch Green Chile Sauce - 2 fl oz",
+      "category": "Custom - on the SIDE",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Mild Roasted Tomatillo Sauce - 2 fl oz",
+      "category": "Custom - on the SIDE",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Pico De Gallo - 2 oz",
+      "category": "Custom - on the SIDE",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Queso - 2 fl oz",
+      "category": "Custom - on the SIDE",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Roasted Seasonal Veg - 2 oz",
+      "category": "Custom - on the SIDE",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Salsa Fresca - 2 fl oz",
+      "category": "Custom - on the SIDE",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Salsa Roja - 2 fl oz",
+      "category": "Custom - on the SIDE",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Shredded Cheese - 2 oz",
+      "category": "Custom - on the SIDE",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Shredded Lettuce - 1 oz",
+      "category": "Custom - on the SIDE",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Sour Cream - 1 scoop",
+      "category": "Custom - on the SIDE",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Lime Pie",
+      "category": "Dessert",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Tres Leches Cake",
+      "category": "Dessert",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Chipotle Ranch Dressing - 2 floz",
+      "category": "Dressing",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Chipotle Ranch Dressing - 4 floz",
+      "category": "Dressing",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Cilantro Lime Vinaigrette - 2 floz",
+      "category": "Dressing",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Cilantro Lime Vinaigrette - 4 floz",
+      "category": "Dressing",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Half Chipotle Ranch & Half Vinaigrette",
+      "category": "Dressing",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Half House & Half Chipotle Ranch",
+      "category": "Dressing",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Half House & Half Vinaigrette",
+      "category": "Dressing",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "House Creamy Tomatillo Dressing 2 floz",
+      "category": "Dressing",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "House Creamy Tomatillo Dressing 4 floz",
+      "category": "Dressing",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Cheese On Top - 2 oz",
+      "category": "Enchilada Style",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Hot Roasted Red Chile Sauce - 4 fl oz",
+      "category": "Enchilada Style",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Hot Roasted Red Chile Sauce w Cheese",
+      "category": "Enchilada Style",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Just Cheese - Blend - 2 oz",
+      "category": "Enchilada Style",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Just Cheese - Monterey - 2 oz",
+      "category": "Enchilada Style",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Med Hatch Green Chile Sauce - 4 fl oz",
+      "category": "Enchilada Style",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Med Hatch Green Chile Sauce w Cheese",
+      "category": "Enchilada Style",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Mild Roasted Tomatillo Sauce - 4 fl oz",
+      "category": "Enchilada Style",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Mild Roasted Tomatillo Sauce w Cheese",
+      "category": "Enchilada Style",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Queso Style - 6 oz",
+      "category": "Enchilada Style",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Baja Shrimp - 1 ea",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": true,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Baja Shrimp - 2 ea",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": true,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Beef Barbacoa - 1 oz",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Beef Barbacoa - 1.5 oz",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Beef Barbacoa - 2 oz",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Cheese Only - .5 oz",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Cheese Only - 2 oz",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Coconut Shrimp - 1 ea",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": true,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Coconut Shrimp - 2 ea",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": true,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Fire-Grilled Chicken - 1 oz",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Fire-Grilled Chicken - 1.5 oz",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Fire-Grilled Chicken - 2 oz",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Fire-Grilled Steak - 1 oz",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Fire-Grilled Steak - 1.5 oz",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Fire-Grilled Steak - 2 oz",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Pollo Asado - 1 oz",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Pollo Asado - 1.5 oz",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Pollo Asado - 2 oz",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Roasted Seasonal Veg - 1 oz",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Roasted Seasonal Veg - 1.5 oz",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Roasted Seasonal Veg - 2 oz",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Shredded Chicken - 1 oz",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Shredded Chicken - 1.5 oz",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Shredded Chicken - 2 oz",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Sweet Pork Barbacoa - 1 oz",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Sweet Pork Barbacoa - 1.5 oz",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Sweet Pork Barbacoa - 2 oz",
+      "category": "Extra Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Kids Meal Burrito - High",
+      "category": "Kids Meals",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Kids Meal Burrito - Low",
+      "category": "Kids Meals",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Kids Meal Quesadilla - High",
+      "category": "Kids Meals",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": true,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Kids Meal Quesadilla - Low",
+      "category": "Kids Meals",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Kids Meal Taco - High",
+      "category": "Kids Meals",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": true,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Kids Meal Taco - Low",
+      "category": "Kids Meals",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Nino Quesadilla",
+      "category": "Kids Meals",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Lettuce - Chopped 2.5oz",
+      "category": "Lettuce",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Lettuce - Chopped 5oz",
+      "category": "Lettuce",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Lettuce - Shredded 2.5 oz",
+      "category": "Lettuce",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Lettuce - Shredded 5 oz",
+      "category": "Lettuce",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Baja Shrimp - 4 ea",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": true,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Baja Shrimp - 5 ea",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": true,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Baja Shrimp - 6 ea",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": true,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Beef Barbacoa - 2 oz",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Beef Barbacoa - 3 oz",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Beef Barbacoa - 4 oz",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Cheese Only - 1 oz",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Cheese Only - 4 oz",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Coconut Shrimp - 4 ea",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": true,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Coconut Shrimp - 5 ea",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": true,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Coconut Shrimp - 6 ea",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": true,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Fire-Grilled Chicken - 2 oz",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Fire-Grilled Chicken - 3 oz",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Fire-Grilled Chicken - 4 oz",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Fire-Grilled Steak - 2 oz",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Fire-Grilled Steak - 3 oz",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Fire-Grilled Steak - 4 oz",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Pollo Asado - 2 oz",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Pollo Asado - 3 oz",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Pollo Asado - 4 oz",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Roasted Seasonal Veg - 2 oz",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Roasted Seasonal Veg - 3 oz",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Roasted Seasonal Veg - 4 oz",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Shredded Chicken - 2 oz",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Shredded Chicken - 3 oz",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Shredded Chicken - 4 oz",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Sweet Pork Barbacoa - 2 oz",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Sweet Pork Barbacoa - 3 oz",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Sweet Pork Barbacoa - 4 oz",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Veggie (Guacamole) - 1 scoop",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Veggie (Guacamole) - 2 scoops",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Veggie (Guacamole) - 3 scoops",
+      "category": "Protein",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Cilantro Lime Rice - 4 oz",
+      "category": "Rice",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Cilantro Lime Rice - 8 oz",
+      "category": "Rice",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Hot Roasted Red Chile Sauce - 1 fl oz",
+      "category": "Sauce",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Hot Roasted Red Chile Sauce - 2 fl oz",
+      "category": "Sauce",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Hotter - Habanero Sauce - 1 fl oz",
+      "category": "Sauce",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Hotter - Habanero Sauce - 2 fl oz",
+      "category": "Sauce",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Medium Hatch Green Chile Sauce - 1 fl oz",
+      "category": "Sauce",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Medium Hatch Green Chile Sauce - 2 fl oz",
+      "category": "Sauce",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Mild Roasted Tomatillo Sauce - 1 fl oz",
+      "category": "Sauce",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Mild Roasted Tomatillo Sauce - 2 fl oz",
+      "category": "Sauce",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Guacamole - 1 oz",
+      "category": "Sides",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Guacamole - 2 oz",
+      "category": "Sides",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Avocado Corn Salsa - 2 fl oz",
+      "category": "Toppings",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Chile Lime Tortilla Strips - 1 oz",
+      "category": "Toppings",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Chipotle Ranch Dressing - 2 fl oz",
+      "category": "Toppings",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Cilantro - 1 ea",
+      "category": "Toppings",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Cilantro Lime Vinaigrette - 2 fl oz",
+      "category": "Toppings",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Cotija Cheese - 2/3 tsp",
+      "category": "Toppings",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Grilled Fajita Veg - 1 oz",
+      "category": "Toppings",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Guacamole - 1 scoop",
+      "category": "Toppings",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Hot Roasted Red Chile Sauce - 2 fl oz",
+      "category": "Toppings",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Hotter Habanero Sauce - 2 fl oz",
+      "category": "Toppings",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "House Creamy Tomatillo Dressing - 2 fl oz",
+      "category": "Toppings",
+      "allergens": {
+        "egg": true,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Jalapeno - 2 oz",
+      "category": "Toppings",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Lime Wedge - 1/6",
+      "category": "Toppings",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Mango Salsa - 2 fl oz",
+      "category": "Toppings",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Med Hatch Green Chile Sauce - 2 fl oz",
+      "category": "Toppings",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": false
+      }
+    },
+    {
+      "name": "Mild Roasted Tomatillo Sauce - 2 fl oz",
+      "category": "Toppings",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": true,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Pico de Gallo - 2 oz",
+      "category": "Toppings",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Salsa Fresca - 2 fl oz",
+      "category": "Toppings",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Salsa Roja - 2 fl oz",
+      "category": "Toppings",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Shredded Cheese - 2 oz",
+      "category": "Toppings",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Shredded Lettuce - .5 oz",
+      "category": "Toppings",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Shredded Lettuce - 1 oz",
+      "category": "Toppings",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Sour Cream - 1 scoop",
+      "category": "Toppings",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "12\" Flour",
+      "category": "Tortilla",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "12\" Flour w Cheese",
+      "category": "Tortilla",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "12\" Wheat",
+      "category": "Tortilla",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": true,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "12\" Wheat w Cheese",
+      "category": "Tortilla",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": true,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "6\" Corn",
+      "category": "Tortilla",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "6\" Corn w Cheese",
+      "category": "Tortilla",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "6\" Flour",
+      "category": "Tortilla",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "6\" Wheat",
+      "category": "Tortilla",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": true,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Crunchy Corn",
+      "category": "Tortilla",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": false,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": false,
+        "gluten": false,
+        "vegan": true,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Fried Flour",
+      "category": "Tortilla",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": false,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": true
+      }
+    },
+    {
+      "name": "Fried Wheat",
+      "category": "Tortilla",
+      "allergens": {
+        "egg": false,
+        "fish": false,
+        "milk": true,
+        "peanuts": false,
+        "sesame": true,
+        "shellfish": false,
+        "soy": false,
+        "treeNuts": false,
+        "wheat": true,
+        "gluten": true,
+        "vegan": false,
+        "vegetarian": true
+      }
+    }
+  ],
+  "allergenTypes": [
+    {
+      "key": "egg",
+      "label": "Egg",
+      "icon": "🥚"
+    },
+    {
+      "key": "fish",
+      "label": "Fish",
+      "icon": "🐟"
+    },
+    {
+      "key": "milk",
+      "label": "Milk",
+      "icon": "🥛"
+    },
+    {
+      "key": "peanuts",
+      "label": "Peanuts",
+      "icon": "🥜"
+    },
+    {
+      "key": "sesame",
+      "label": "Sesame",
+      "icon": "⚪"
+    },
+    {
+      "key": "shellfish",
+      "label": "Shellfish",
+      "icon": "🦐"
+    },
+    {
+      "key": "soy",
+      "label": "Soy",
+      "icon": "🫘"
+    },
+    {
+      "key": "treeNuts",
+      "label": "Tree Nuts",
+      "icon": "🌰"
+    },
+    {
+      "key": "wheat",
+      "label": "Wheat",
+      "icon": "🌾"
+    },
+    {
+      "key": "gluten",
+      "label": "Gluten",
+      "icon": "🍞"
+    },
+    {
+      "key": "vegan",
+      "label": "Vegan",
+      "icon": "🌱"
+    },
+    {
+      "key": "vegetarian",
+      "label": "Vegetarian",
+      "icon": "🥬"
+    }
+  ],
+  "metadata": {
+    "source": "Cafe Rio Allergens 12-15-25 (1).xls",
+    "totalCategories": 23,
+    "totalItems": 344
+  }
+}

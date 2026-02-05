@@ -1,0 +1,63 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Allowed email domain
+    function isAllowedDomain() {
+      return request.auth != null && 
+        request.auth.token.email.matches('.*@caferio[.]com$');
+    }
+    
+    // Helper function to check if user is admin (simplified - all caferio.com users are admins for now)
+    function isAdmin() {
+      return isAllowedDomain();
+    }
+    
+    // Helper function to check if user is authenticated with allowed domain
+    function isAuthenticated() {
+      return isAllowedDomain();
+    }
+
+    // Categories - public read, admin write
+    match /categories/{categoryId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Items - public read, admin write
+    match /items/{itemId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Allergen Categories - public read, admin write
+    match /allergenCategories/{categoryId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Allergen Items - public read, admin write
+    match /allergenItems/{itemId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Users - caferio users can read/write own profile
+    match /users/{userId} {
+      allow read: if request.auth != null && request.auth.uid == userId;
+      allow create: if isAuthenticated() && request.auth.uid == userId;
+      allow update: if isAuthenticated() && request.auth.uid == userId;
+      allow delete: if isAdmin();
+    }
+
+    // Saved meals - only owner can access
+    match /users/{userId}/savedMeals/{mealId} {
+      allow read, write: if isAuthenticated() && request.auth.uid == userId;
+    }
+
+    // API Keys - admin only
+    match /apiKeys/{keyId} {
+      allow read, write: if isAdmin();
+    }
+  }
+}
