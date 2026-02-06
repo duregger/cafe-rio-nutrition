@@ -1,15 +1,17 @@
-import { Button, Card, Row, Col, Typography } from 'antd';
+import { Button, Card, Row, Col, Typography, Space } from 'antd';
 import { 
   CalculatorOutlined, 
   FileTextOutlined, 
   SafetyOutlined,
   DownloadOutlined,
+  FileExcelOutlined,
   ArrowRightOutlined
 } from '@ant-design/icons';
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import jsPDF from 'jspdf';
 import autoTable from 'jspdf-autotable';
+import * as XLSX from 'xlsx';
 import { getItems } from '../services/firestore';
 import type { MenuItem } from '../types';
 
@@ -18,6 +20,7 @@ const { Title, Paragraph, Text } = Typography;
 export default function Home() {
   const navigate = useNavigate();
   const [generatingPDF, setGeneratingPDF] = useState(false);
+  const [generatingExcel, setGeneratingExcel] = useState(false);
   const [items, setItems] = useState<MenuItem[]>([]);
 
   useEffect(() => {
@@ -146,6 +149,95 @@ export default function Home() {
     }
   };
 
+  const generateExcel = async () => {
+    setGeneratingExcel(true);
+    
+    try {
+      // Create workbook
+      const wb = XLSX.utils.book_new();
+
+      // Group items by category
+      const groupedItems: Record<string, MenuItem[]> = {};
+      items.forEach(item => {
+        const category = item.categoryName || 'Uncategorized';
+        if (!groupedItems[category]) {
+          groupedItems[category] = [];
+        }
+        groupedItems[category].push(item);
+      });
+
+      // Create "All Items" sheet first
+      const allData = items.map(item => ({
+        'Category': item.categoryName || 'Uncategorized',
+        'Item': item.name,
+        'Serving Size': item.servingSize || '',
+        'Calories': item.nutrition?.calories || 0,
+        'Total Fat (g)': item.nutrition?.totalFat || 0,
+        'Saturated Fat (g)': item.nutrition?.saturatedFat || 0,
+        'Trans Fat (g)': item.nutrition?.transFat || 0,
+        'Cholesterol (mg)': item.nutrition?.cholesterol || 0,
+        'Sodium (mg)': item.nutrition?.sodium || 0,
+        'Total Carbs (g)': item.nutrition?.totalCarbs || 0,
+        'Dietary Fiber (g)': item.nutrition?.dietaryFiber || 0,
+        'Total Sugars (g)': item.nutrition?.totalSugars || 0,
+        'Protein (g)': item.nutrition?.protein || 0,
+        'Milk': item.allergens?.milk ? '✓' : '',
+        'Egg': item.allergens?.egg ? '✓' : '',
+        'Wheat': item.allergens?.wheat ? '✓' : '',
+        'Soy': item.allergens?.soy ? '✓' : '',
+        'Peanuts': item.allergens?.peanuts ? '✓' : '',
+        'Tree Nuts': item.allergens?.treeNuts ? '✓' : '',
+        'Fish': item.allergens?.fish ? '✓' : '',
+        'Shellfish': item.allergens?.shellfish ? '✓' : '',
+        'Sesame': item.allergens?.sesame ? '✓' : '',
+        'Vegetarian': item.allergens?.vegetarian ? '✓' : '',
+        'Vegan': item.allergens?.vegan ? '✓' : '',
+      }));
+
+      const wsAll = XLSX.utils.json_to_sheet(allData);
+      XLSX.utils.book_append_sheet(wb, wsAll, 'All Items');
+
+      // Create a sheet for each category
+      Object.entries(groupedItems).forEach(([category, categoryItems]) => {
+        const categoryData = categoryItems.map(item => ({
+          'Item': item.name,
+          'Serving Size': item.servingSize || '',
+          'Calories': item.nutrition?.calories || 0,
+          'Total Fat (g)': item.nutrition?.totalFat || 0,
+          'Sat Fat (g)': item.nutrition?.saturatedFat || 0,
+          'Sodium (mg)': item.nutrition?.sodium || 0,
+          'Carbs (g)': item.nutrition?.totalCarbs || 0,
+          'Fiber (g)': item.nutrition?.dietaryFiber || 0,
+          'Sugars (g)': item.nutrition?.totalSugars || 0,
+          'Protein (g)': item.nutrition?.protein || 0,
+          'Allergens': [
+            item.allergens?.milk ? 'Milk' : '',
+            item.allergens?.egg ? 'Egg' : '',
+            item.allergens?.wheat ? 'Wheat' : '',
+            item.allergens?.soy ? 'Soy' : '',
+            item.allergens?.peanuts ? 'Peanuts' : '',
+            item.allergens?.treeNuts ? 'Tree Nuts' : '',
+            item.allergens?.fish ? 'Fish' : '',
+            item.allergens?.shellfish ? 'Shellfish' : '',
+            item.allergens?.sesame ? 'Sesame' : '',
+          ].filter(Boolean).join(', ') || '-',
+        }));
+
+        // Sanitize sheet name (Excel has 31 char limit and no special chars)
+        const sheetName = category.substring(0, 31).replace(/[\\/*?[\]:]/g, '');
+        const ws = XLSX.utils.json_to_sheet(categoryData);
+        XLSX.utils.book_append_sheet(wb, ws, sheetName);
+      });
+
+      // Save the file
+      XLSX.writeFile(wb, 'cafe-rio-nutrition-allergens.xlsx');
+    } catch (error) {
+      console.error('Error generating Excel:', error);
+    } finally {
+      setGeneratingExcel(false);
+    }
+  };
+
   const features = [
     {
       icon: <CalculatorOutlined className="text-3xl md:text-4xl" style={{ color: '#F93A26' }} />,
@@ -180,16 +272,28 @@ export default function Home() {
         <Paragraph className="text-sm md:text-lg max-w-2xl mx-auto mb-4 md:mb-6 px-2" style={{ color: '#F9E4CA' }}>
           Manage menu items, nutritional data, and allergen information in one place.
         </Paragraph>
-        <Button 
-          size="large"
-          icon={<DownloadOutlined />}
-          onClick={generatePDF}
-          loading={generatingPDF}
-          className="border-none h-10 md:h-12 px-6 md:px-8 text-base md:text-lg font-semibold"
-          style={{ backgroundColor: '#382827', color: '#F9E4CA' }}
-        >
-          {generatingPDF ? 'Generating...' : 'Download Full PDF'}
-        </Button>
+        <Space wrap className="justify-center">
+          <Button 
+            size="large"
+            icon={<DownloadOutlined />}
+            onClick={generatePDF}
+            loading={generatingPDF}
+            className="border-none h-10 md:h-12 px-5 md:px-6 text-sm md:text-base font-semibold"
+            style={{ backgroundColor: '#382827', color: '#F9E4CA' }}
+          >
+            {generatingPDF ? 'Generating...' : 'Download PDF'}
+          </Button>
+          <Button 
+            size="large"
+            icon={<FileExcelOutlined />}
+            onClick={generateExcel}
+            loading={generatingExcel}
+            className="border-none h-10 md:h-12 px-5 md:px-6 text-sm md:text-base font-semibold"
+            style={{ backgroundColor: '#217346', color: '#fff' }}
+          >
+            {generatingExcel ? 'Generating...' : 'Download Excel'}
+          </Button>
+        </Space>
       </div>
 
       {/* Features Section - Clickable Cards */}
@@ -228,7 +332,7 @@ export default function Home() {
             <li><strong>Nutrition Info</strong> — Browse all menu items with full nutritional data</li>
             <li><strong>Allergen Guide</strong> — Filter items by allergens and dietary preferences</li>
             <li><strong>Admin Panel</strong> — Manage categories, items, nutrition data, and allergens</li>
-            <li><strong>PDF Export</strong> — Generate a complete nutrition & allergen report</li>
+            <li><strong>PDF/Excel Export</strong> — Download nutrition & allergen data in PDF or Excel format</li>
             <li><strong>REST API</strong> — Public endpoints for other platforms to consume menu and nutrition data</li>
           </ul>
           <Paragraph style={{ color: '#666' }} className="!mb-0 !mt-3 text-xs">
