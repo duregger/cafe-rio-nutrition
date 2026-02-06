@@ -14,24 +14,39 @@ const customerCategories = [
   'Sauces & Dressings',
   'Toppings & Specials',
   'Desserts & Drinks',
+  'Other',
 ];
 
 // Map our database categories to customer categories
 const categoryMapping: Record<string, string> = {
   'Tortilla': 'Tortillas',
+  'Tortillas': 'Tortillas',
   'Rice': 'Beans & Rice',
   'Beans': 'Beans & Rice',
+  'Beans & Rice': 'Beans & Rice',
   'Protein': 'Meats',
   'Extra Protein': 'Meats',
+  'Enchilada Style': 'Meats',
+  'Kids Meals': 'Meats',
+  'Bowl Builds': 'Meats',
+  'Bowls - Build Your Own': 'Meats',
   'Sauce': 'Sauces & Dressings',
   'Dressing': 'Sauces & Dressings',
+  'Sauces & Dressings': 'Sauces & Dressings',
   'Toppings': 'Toppings & Specials',
   'Cheese': 'Toppings & Specials',
   'Lettuce': 'Toppings & Specials',
   'Sides': 'Toppings & Specials',
+  'Add-Ins': 'Toppings & Specials',
+  'Custom - ADD': 'Toppings & Specials',
+  'Custom - EXTRA': 'Toppings & Specials',
+  'Custom - on the SIDE': 'Toppings & Specials',
+  'Toppings & Specials': 'Toppings & Specials',
   'Dessert': 'Desserts & Drinks',
   'Beverages - 20 oz': 'Desserts & Drinks',
   'Beverages - 32 oz': 'Desserts & Drinks',
+  'Desserts & Drinks': 'Desserts & Drinks',
+  'Appetizers': 'Toppings & Specials',
 };
 
 export default function NutritionInfo() {
@@ -70,9 +85,9 @@ export default function NutritionInfo() {
         return;
       }
 
-      // Map to customer category
-      const customerCategory = categoryMapping[item.categoryName];
-      if (customerCategory && groups[customerCategory]) {
+      // Map to customer category (fallback to Other for unmapped)
+      const customerCategory = categoryMapping[item.categoryName] || 'Other';
+      if (groups[customerCategory]) {
         groups[customerCategory].push(item);
       }
     });

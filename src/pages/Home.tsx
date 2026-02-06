@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import jsPDF from 'jspdf';
 import autoTable from 'jspdf-autotable';
-import * as XLSX from 'xlsx';
+import * as ExcelJS from 'exceljs';
 import { getItems } from '../services/firestore';
 import type { MenuItem } from '../types';
 
@@ -153,8 +153,7 @@ export default function Home() {
     setGeneratingExcel(true);
     
     try {
-      // Create workbook
-      const wb = XLSX.utils.book_new();
+      const wb = new ExcelJS.Workbook();
 
       // Group items by category
       const groupedItems: Record<string, MenuItem[]> = {};
@@ -166,51 +165,77 @@ export default function Home() {
         groupedItems[category].push(item);
       });
 
-      // Create "All Items" sheet first
+      // Create "All Items" sheet
       const allData = items.map(item => ({
-        'Category': item.categoryName || 'Uncategorized',
-        'Item': item.name,
-        'Serving Size': item.servingSize || '',
-        'Calories': item.nutrition?.calories || 0,
-        'Total Fat (g)': item.nutrition?.totalFat || 0,
-        'Saturated Fat (g)': item.nutrition?.saturatedFat || 0,
-        'Trans Fat (g)': item.nutrition?.transFat || 0,
-        'Cholesterol (mg)': item.nutrition?.cholesterol || 0,
-        'Sodium (mg)': item.nutrition?.sodium || 0,
-        'Total Carbs (g)': item.nutrition?.totalCarbs || 0,
-        'Dietary Fiber (g)': item.nutrition?.dietaryFiber || 0,
-        'Total Sugars (g)': item.nutrition?.totalSugars || 0,
-        'Protein (g)': item.nutrition?.protein || 0,
-        'Milk': item.allergens?.milk ? '✓' : '',
-        'Egg': item.allergens?.egg ? '✓' : '',
-        'Wheat': item.allergens?.wheat ? '✓' : '',
-        'Soy': item.allergens?.soy ? '✓' : '',
-        'Peanuts': item.allergens?.peanuts ? '✓' : '',
-        'Tree Nuts': item.allergens?.treeNuts ? '✓' : '',
-        'Fish': item.allergens?.fish ? '✓' : '',
-        'Shellfish': item.allergens?.shellfish ? '✓' : '',
-        'Sesame': item.allergens?.sesame ? '✓' : '',
-        'Vegetarian': item.allergens?.vegetarian ? '✓' : '',
-        'Vegan': item.allergens?.vegan ? '✓' : '',
+        category: item.categoryName || 'Uncategorized',
+        item: item.name,
+        servingSize: item.servingSize || '',
+        calories: item.nutrition?.calories || 0,
+        totalFat: item.nutrition?.totalFat || 0,
+        saturatedFat: item.nutrition?.saturatedFat || 0,
+        transFat: item.nutrition?.transFat || 0,
+        cholesterol: item.nutrition?.cholesterol || 0,
+        sodium: item.nutrition?.sodium || 0,
+        totalCarbs: item.nutrition?.totalCarbs || 0,
+        dietaryFiber: item.nutrition?.dietaryFiber || 0,
+        totalSugars: item.nutrition?.totalSugars || 0,
+        protein: item.nutrition?.protein || 0,
+        milk: item.allergens?.milk ? '✓' : '',
+        egg: item.allergens?.egg ? '✓' : '',
+        wheat: item.allergens?.wheat ? '✓' : '',
+        soy: item.allergens?.soy ? '✓' : '',
+        peanuts: item.allergens?.peanuts ? '✓' : '',
+        treeNuts: item.allergens?.treeNuts ? '✓' : '',
+        fish: item.allergens?.fish ? '✓' : '',
+        shellfish: item.allergens?.shellfish ? '✓' : '',
+        sesame: item.allergens?.sesame ? '✓' : '',
+        vegetarian: item.allergens?.vegetarian ? '✓' : '',
+        vegan: item.allergens?.vegan ? '✓' : '',
       }));
 
-      const wsAll = XLSX.utils.json_to_sheet(allData);
-      XLSX.utils.book_append_sheet(wb, wsAll, 'All Items');
+      const wsAll = wb.addWorksheet('All Items');
+      wsAll.columns = [
+        { header: 'Category', key: 'category', width: 20 },
+        { header: 'Item', key: 'item', width: 35 },
+        { header: 'Serving Size', key: 'servingSize', width: 12 },
+        { header: 'Calories', key: 'calories', width: 10 },
+        { header: 'Total Fat (g)', key: 'totalFat', width: 14 },
+        { header: 'Saturated Fat (g)', key: 'saturatedFat', width: 16 },
+        { header: 'Trans Fat (g)', key: 'transFat', width: 14 },
+        { header: 'Cholesterol (mg)', key: 'cholesterol', width: 16 },
+        { header: 'Sodium (mg)', key: 'sodium', width: 14 },
+        { header: 'Total Carbs (g)', key: 'totalCarbs', width: 16 },
+        { header: 'Dietary Fiber (g)', key: 'dietaryFiber', width: 18 },
+        { header: 'Total Sugars (g)', key: 'totalSugars', width: 16 },
+        { header: 'Protein (g)', key: 'protein', width: 12 },
+        { header: 'Milk', key: 'milk', width: 6 },
+        { header: 'Egg', key: 'egg', width: 6 },
+        { header: 'Wheat', key: 'wheat', width: 8 },
+        { header: 'Soy', key: 'soy', width: 6 },
+        { header: 'Peanuts', key: 'peanuts', width: 10 },
+        { header: 'Tree Nuts', key: 'treeNuts', width: 12 },
+        { header: 'Fish', key: 'fish', width: 6 },
+        { header: 'Shellfish', key: 'shellfish', width: 12 },
+        { header: 'Sesame', key: 'sesame', width: 8 },
+        { header: 'Vegetarian', key: 'vegetarian', width: 12 },
+        { header: 'Vegan', key: 'vegan', width: 8 },
+      ];
+      wsAll.addRows(allData);
 
       // Create a sheet for each category
       Object.entries(groupedItems).forEach(([category, categoryItems]) => {
         const categoryData = categoryItems.map(item => ({
-          'Item': item.name,
-          'Serving Size': item.servingSize || '',
-          'Calories': item.nutrition?.calories || 0,
-          'Total Fat (g)': item.nutrition?.totalFat || 0,
-          'Sat Fat (g)': item.nutrition?.saturatedFat || 0,
-          'Sodium (mg)': item.nutrition?.sodium || 0,
-          'Carbs (g)': item.nutrition?.totalCarbs || 0,
-          'Fiber (g)': item.nutrition?.dietaryFiber || 0,
-          'Sugars (g)': item.nutrition?.totalSugars || 0,
-          'Protein (g)': item.nutrition?.protein || 0,
-          'Allergens': [
+          item: item.name,
+          servingSize: item.servingSize || '',
+          calories: item.nutrition?.calories || 0,
+          totalFat: item.nutrition?.totalFat || 0,
+          satFat: item.nutrition?.saturatedFat || 0,
+          sodium: item.nutrition?.sodium || 0,
+          carbs: item.nutrition?.totalCarbs || 0,
+          fiber: item.nutrition?.dietaryFiber || 0,
+          sugars: item.nutrition?.totalSugars || 0,
+          protein: item.nutrition?.protein || 0,
+          allergens: [
             item.allergens?.milk ? 'Milk' : '',
             item.allergens?.egg ? 'Egg' : '',
             item.allergens?.wheat ? 'Wheat' : '',
@@ -223,14 +248,32 @@ export default function Home() {
           ].filter(Boolean).join(', ') || '-',
         }));
 
-        // Sanitize sheet name (Excel has 31 char limit and no special chars)
         const sheetName = category.substring(0, 31).replace(/[\\/*?[\]:]/g, '');
-        const ws = XLSX.utils.json_to_sheet(categoryData);
-        XLSX.utils.book_append_sheet(wb, ws, sheetName);
+        const ws = wb.addWorksheet(sheetName);
+        ws.columns = [
+          { header: 'Item', key: 'item', width: 35 },
+          { header: 'Serving Size', key: 'servingSize', width: 12 },
+          { header: 'Calories', key: 'calories', width: 10 },
+          { header: 'Total Fat (g)', key: 'totalFat', width: 14 },
+          { header: 'Sat Fat (g)', key: 'satFat', width: 12 },
+          { header: 'Sodium (mg)', key: 'sodium', width: 14 },
+          { header: 'Carbs (g)', key: 'carbs', width: 12 },
+          { header: 'Fiber (g)', key: 'fiber', width: 10 },
+          { header: 'Sugars (g)', key: 'sugars', width: 12 },
+          { header: 'Protein (g)', key: 'protein', width: 12 },
+          { header: 'Allergens', key: 'allergens', width: 40 },
+        ];
+        ws.addRows(categoryData);
       });
 
-      // Save the file
-      XLSX.writeFile(wb, 'cafe-rio-nutrition-allergens.xlsx');
+      const buffer = await wb.xlsx.writeBuffer();
+      const blob = new Blob([buffer], { type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'cafe-rio-nutrition-allergens.xlsx';
+      a.click();
+      URL.revokeObjectURL(url);
     } catch (error) {
       console.error('Error generating Excel:', error);
     } finally {
@@ -278,8 +321,8 @@ export default function Home() {
             icon={<DownloadOutlined />}
             onClick={generatePDF}
             loading={generatingPDF}
-            className="border-none h-10 md:h-12 px-5 md:px-6 text-sm md:text-base font-semibold"
-            style={{ backgroundColor: '#382827', color: '#F9E4CA' }}
+            className="h-10 md:h-12 px-5 md:px-6 text-sm md:text-base font-semibold"
+            style={{ backgroundColor: '#382827', color: '#F9E4CA', border: 'none' }}
           >
             {generatingPDF ? 'Generating...' : 'Download PDF'}
           </Button>
@@ -288,8 +331,8 @@ export default function Home() {
             icon={<FileExcelOutlined />}
             onClick={generateExcel}
             loading={generatingExcel}
-            className="border-none h-10 md:h-12 px-5 md:px-6 text-sm md:text-base font-semibold"
-            style={{ backgroundColor: '#217346', color: '#fff' }}
+            className="h-10 md:h-12 px-5 md:px-6 text-sm md:text-base font-semibold"
+            style={{ backgroundColor: '#F93A26', color: '#fff', border: 'none' }}
           >
             {generatingExcel ? 'Generating...' : 'Download Excel'}
           </Button>
@@ -301,6 +344,7 @@ export default function Home() {
         {features.map((feature, index) => (
           <Col xs={24} sm={8} key={index}>
             <Card 
+              bordered={false}
               className="h-full text-center hover:shadow-lg transition-all cursor-pointer hover:scale-[1.02]" 
               size="small"
               onClick={() => navigate(feature.path)}

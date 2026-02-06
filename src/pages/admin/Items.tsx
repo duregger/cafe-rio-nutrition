@@ -111,7 +111,7 @@ export default function Items() {
       };
 
       if (editingItem) {
-        await updateItem(editingItem.id, data);
+        await updateItem(editingItem.id, data, { fromCategoryId: editingItem.categoryId });
         message.success('Item updated');
       } else {
         await createItem(data);

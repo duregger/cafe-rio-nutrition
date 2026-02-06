@@ -11,10 +11,18 @@ import {
   orderBy,
   serverTimestamp,
   writeBatch,
-  increment,
 } from 'firebase/firestore';
 import { db } from '../config/firebase';
-import type { Category, MenuItem, CategoryFormData, MenuItemFormData, NutritionData, AllergenFlags } from '../types';
+import type {
+  Category,
+  MenuItem,
+  CategoryFormData,
+  MenuItemFormData,
+  BaseItem,
+  ItemCategory,
+  NutritionData,
+  AllergenFlags,
+} from '../types';
 import { emptyNutrition, emptyAllergenFlags } from '../types';
 
 // Helper to convert Firestore timestamp to Date
@@ -46,12 +54,10 @@ const extractNutrition = (data: Record<string, unknown>): NutritionData => ({
 
 // Helper to extract allergen data from flat or nested document structure
 const extractAllergens = (data: Record<string, unknown>): AllergenFlags => {
-  // Check if allergens are nested or flat
   const allergens = data.allergens as Record<string, boolean> | undefined;
   if (allergens && typeof allergens === 'object') {
     return { ...emptyAllergenFlags, ...allergens };
   }
-  // Flat structure
   return {
     egg: (data.egg as boolean) || false,
     fish: (data.fish as boolean) || false,
@@ -68,18 +74,16 @@ const extractAllergens = (data: Record<string, unknown>): AllergenFlags => {
   };
 };
 
-// Helper to transform Firestore document to MenuItem
-const docToMenuItem = (docId: string, data: Record<string, unknown>): MenuItem => {
-  // Check if nutrition is already nested or flat
+// Transform Firestore doc (legacy items) to MenuItem
+const legacyDocToMenuItem = (docId: string, data: Record<string, unknown>): MenuItem => {
   const hasNestedNutrition = data.nutrition && typeof data.nutrition === 'object';
-  
   return {
     id: docId,
     name: (data.name as string) || '',
     categoryId: (data.categoryId as string) || '',
     categoryName: (data.categoryName as string) || '',
     isActive: data.isActive !== false,
-    nutrition: hasNestedNutrition 
+    nutrition: hasNestedNutrition
       ? { ...emptyNutrition, ...(data.nutrition as NutritionData) }
       : extractNutrition(data),
     allergens: extractAllergens(data),
@@ -89,26 +93,74 @@ const docToMenuItem = (docId: string, data: Record<string, unknown>): MenuItem =
   };
 };
 
+// Transform base item + category info to MenuItem (view model)
+const baseItemToMenuItem = (
+  base: BaseItem,
+  categoryId: string,
+  categoryName: string
+): MenuItem => ({
+  id: base.id,
+  name: base.name,
+  categoryId,
+  categoryName,
+  isActive: base.isActive,
+  nutrition: base.nutrition,
+  allergens: base.allergens,
+  servingSize: base.servingSize,
+  createdAt: base.createdAt,
+  updatedAt: base.updatedAt,
+});
+
 // ============ CATEGORIES ============
 
 export async function getCategories(): Promise<Category[]> {
-  const q = query(collection(db, 'categories'), orderBy('displayOrder', 'asc'));
-  const snapshot = await getDocs(q);
-  return snapshot.docs.map(doc => ({
-    id: doc.id,
-    ...doc.data(),
-    createdAt: toDate(doc.data().createdAt),
-    updatedAt: toDate(doc.data().updatedAt),
-  })) as Category[];
+  const categoriesSnap = await getDocs(
+    query(collection(db, 'categories'), orderBy('displayOrder', 'asc'))
+  );
+
+  const baseSnap = await getDocs(collection(db, 'base_items'));
+  const useLegacy = baseSnap.empty;
+
+  let countByCategory: Record<string, number> = {};
+  if (useLegacy) {
+    const itemsSnap = await getDocs(collection(db, 'items'));
+    itemsSnap.docs.forEach((d) => {
+      const cid = (d.data() as { categoryId?: string }).categoryId || '';
+      countByCategory[cid] = (countByCategory[cid] || 0) + 1;
+    });
+  } else {
+    const assignmentsSnap = await getDocs(collection(db, 'item_categories'));
+    assignmentsSnap.docs.forEach((d) => {
+      const cid = (d.data() as ItemCategory).categoryId;
+      countByCategory[cid] = (countByCategory[cid] || 0) + 1;
+    });
+  }
+
+  return categoriesSnap.docs.map((d) => {
+    const data = d.data();
+    return {
+      id: d.id,
+      ...data,
+      itemCount: countByCategory[d.id] ?? (data.itemCount as number) ?? 0,
+      createdAt: toDate(data.createdAt),
+      updatedAt: toDate(data.updatedAt),
+    } as Category;
+  });
 }
 
 export async function getCategory(id: string): Promise<Category | null> {
   const docRef = doc(db, 'categories', id);
   const docSnap = await getDoc(docRef);
   if (!docSnap.exists()) return null;
+
+  const assignmentsSnap = await getDocs(
+    query(collection(db, 'item_categories'), where('categoryId', '==', id))
+  );
+
   return {
     id: docSnap.id,
     ...docSnap.data(),
+    itemCount: assignmentsSnap.size,
     createdAt: toDate(docSnap.data().createdAt),
     updatedAt: toDate(docSnap.data().updatedAt),
   } as Category;
@@ -133,130 +185,274 @@ export async function updateCategory(id: string, data: Partial<CategoryFormData>
 }
 
 export async function deleteCategory(id: string): Promise<void> {
-  // First, check if category has items
-  const items = await getItemsByCategory(id);
-  if (items.length > 0) {
-    throw new Error('Cannot delete category with existing items. Delete or move items first.');
+  const assignmentsSnap = await getDocs(
+    query(collection(db, 'item_categories'), where('categoryId', '==', id))
+  );
+  if (assignmentsSnap.size > 0) {
+    throw new Error('Cannot delete category with existing items. Remove item assignments first.');
   }
-  const docRef = doc(db, 'categories', id);
-  await deleteDoc(docRef);
+  await deleteDoc(doc(db, 'categories', id));
 }
 
-// ============ MENU ITEMS ============
+// ============ BASE ITEMS ============
+
+async function getBaseItem(id: string): Promise<BaseItem | null> {
+  const docRef = doc(db, 'base_items', id);
+  const docSnap = await getDoc(docRef);
+  if (!docSnap.exists()) return null;
+
+  const data = docSnap.data() as Record<string, unknown>;
+  const hasNestedNutrition = data.nutrition && typeof data.nutrition === 'object';
+
+  return {
+    id: docSnap.id,
+    name: (data.name as string) || '',
+    isActive: data.isActive !== false,
+    nutrition: hasNestedNutrition
+      ? { ...emptyNutrition, ...(data.nutrition as NutritionData) }
+      : extractNutrition(data),
+    allergens: extractAllergens(data),
+    servingSize: data.servingSize as string | undefined,
+    createdAt: toDate(data.createdAt),
+    updatedAt: toDate(data.updatedAt),
+  };
+}
+
+// ============ MENU ITEMS (view model - base item + category context) ============
 
 export async function getItems(): Promise<MenuItem[]> {
-  const q = query(collection(db, 'items'), orderBy('name', 'asc'));
-  const snapshot = await getDocs(q);
-  return snapshot.docs.map(doc => docToMenuItem(doc.id, doc.data() as Record<string, unknown>));
+  const baseSnap = await getDocs(collection(db, 'base_items'));
+  if (baseSnap.empty) {
+    const legacySnap = await getDocs(
+      query(collection(db, 'items'), orderBy('name', 'asc'))
+    );
+    if (!legacySnap.empty) {
+      return legacySnap.docs.map((d) =>
+        legacyDocToMenuItem(d.id, d.data() as Record<string, unknown>)
+      );
+    }
+    return [];
+  }
+
+  const [assignmentsSnap, categoriesSnap] = await Promise.all([
+    getDocs(collection(db, 'item_categories')),
+    getDocs(collection(db, 'categories')),
+  ]);
+
+  const categoryMap = new Map(categoriesSnap.docs.map((d) => [d.id, d.data().name as string]));
+  const assignmentsByItem = new Map<string, { categoryId: string; categoryName: string }[]>();
+
+  assignmentsSnap.docs.forEach((d) => {
+    const a = d.data() as ItemCategory;
+    const name = categoryMap.get(a.categoryId) || '';
+    if (!assignmentsByItem.has(a.itemId)) {
+      assignmentsByItem.set(a.itemId, []);
+    }
+    assignmentsByItem.get(a.itemId)!.push({ categoryId: a.categoryId, categoryName: name });
+  });
+
+  const results: MenuItem[] = [];
+  baseSnap.docs.forEach((d) => {
+    const data = d.data() as Record<string, unknown>;
+    const hasNestedNutrition = data.nutrition && typeof data.nutrition === 'object';
+    const base: BaseItem = {
+      id: d.id,
+      name: (data.name as string) || '',
+      isActive: data.isActive !== false,
+      nutrition: hasNestedNutrition
+        ? { ...emptyNutrition, ...(data.nutrition as NutritionData) }
+        : extractNutrition(data),
+      allergens: extractAllergens(data),
+      servingSize: data.servingSize as string | undefined,
+      createdAt: toDate(data.createdAt),
+      updatedAt: toDate(data.updatedAt),
+    };
+
+    const assignments = assignmentsByItem.get(d.id);
+    if (assignments && assignments.length > 0) {
+      const primary = assignments[0];
+      results.push(baseItemToMenuItem(base, primary.categoryId, primary.categoryName));
+    } else {
+      results.push(baseItemToMenuItem(base, '', 'Uncategorized'));
+    }
+  });
+
+  return results;
 }
 
 export async function getItemsByCategory(categoryId: string): Promise<MenuItem[]> {
-  const q = query(
-    collection(db, 'items'),
-    where('categoryId', '==', categoryId),
-    orderBy('name', 'asc')
-  );
-  const snapshot = await getDocs(q);
-  return snapshot.docs.map(doc => docToMenuItem(doc.id, doc.data() as Record<string, unknown>));
+  const baseSnap = await getDocs(collection(db, 'base_items'));
+  if (baseSnap.empty) {
+    const legacySnap = await getDocs(
+      query(
+        collection(db, 'items'),
+        where('categoryId', '==', categoryId),
+        orderBy('name', 'asc')
+      )
+    );
+    if (!legacySnap.empty) {
+      return legacySnap.docs.map((d) =>
+        legacyDocToMenuItem(d.id, d.data() as Record<string, unknown>)
+      );
+    }
+    return [];
+  }
+
+  const [assignmentsSnap, categorySnap] = await Promise.all([
+    getDocs(
+      query(
+        collection(db, 'item_categories'),
+        where('categoryId', '==', categoryId)
+      )
+    ),
+    getDoc(doc(db, 'categories', categoryId)),
+  ]);
+
+  const categoryName = categorySnap.exists() ? (categorySnap.data()?.name as string) : '';
+  const itemIds = assignmentsSnap.docs.map((d) => (d.data() as ItemCategory).itemId);
+
+  if (itemIds.length === 0) return [];
+
+  const results: MenuItem[] = [];
+  for (const itemId of itemIds) {
+    const base = await getBaseItem(itemId);
+    if (base) {
+      results.push(baseItemToMenuItem(base, categoryId, categoryName));
+    }
+  }
+  results.sort((a, b) => a.name.localeCompare(b.name));
+  return results;
 }
 
 export async function getItem(id: string): Promise<MenuItem | null> {
-  const docRef = doc(db, 'items', id);
-  const docSnap = await getDoc(docRef);
-  if (!docSnap.exists()) return null;
-  return docToMenuItem(docSnap.id, docSnap.data() as Record<string, unknown>);
+  const baseSnap = await getDoc(doc(db, 'base_items', id));
+  if (!baseSnap.exists()) {
+    const legacySnap = await getDoc(doc(db, 'items', id));
+    if (legacySnap.exists()) {
+      return legacyDocToMenuItem(
+        legacySnap.id,
+        legacySnap.data() as Record<string, unknown>
+      );
+    }
+    return null;
+  }
+
+  const base = await getBaseItem(id);
+  if (!base) return null;
+
+  const assignmentsSnap = await getDocs(
+    query(collection(db, 'item_categories'), where('itemId', '==', id))
+  );
+  const categoryDoc = assignmentsSnap.docs[0];
+  const categoryId = categoryDoc ? (categoryDoc.data() as ItemCategory).categoryId : '';
+  const categorySnap = categoryId ? await getDoc(doc(db, 'categories', categoryId)) : null;
+  const categoryName = categorySnap?.exists() ? (categorySnap.data()?.name as string) : '';
+
+  return baseItemToMenuItem(base, categoryId, categoryName);
 }
 
 export async function createItem(data: MenuItemFormData): Promise<string> {
   const batch = writeBatch(db);
-  
-  // Create the item
-  const itemRef = doc(collection(db, 'items'));
-  batch.set(itemRef, {
-    ...data,
+
+  const baseRef = doc(collection(db, 'base_items'));
+  batch.set(baseRef, {
+    name: data.name,
+    isActive: data.isActive !== false,
+    nutrition: data.nutrition || emptyNutrition,
+    allergens: data.allergens || emptyAllergenFlags,
+    servingSize: data.servingSize || null,
     createdAt: serverTimestamp(),
     updatedAt: serverTimestamp(),
   });
-  
-  // Increment category item count
-  const categoryRef = doc(db, 'categories', data.categoryId);
-  batch.update(categoryRef, {
-    itemCount: increment(1),
+
+  const assignmentRef = doc(collection(db, 'item_categories'));
+  batch.set(assignmentRef, {
+    itemId: baseRef.id,
+    categoryId: data.categoryId,
+    createdAt: serverTimestamp(),
     updatedAt: serverTimestamp(),
   });
-  
+
   await batch.commit();
-  return itemRef.id;
+  return baseRef.id;
 }
 
-export async function updateItem(id: string, data: Partial<MenuItemFormData>): Promise<void> {
-  const docRef = doc(db, 'items', id);
-  
-  // If category is changing, update counts
-  if (data.categoryId) {
-    const existingItem = await getItem(id);
-    if (existingItem && existingItem.categoryId !== data.categoryId) {
+export async function updateItem(
+  id: string,
+  data: Partial<MenuItemFormData>,
+  options?: { fromCategoryId?: string }
+): Promise<void> {
+  const baseRef = doc(db, 'base_items', id);
+
+  const updates: Record<string, unknown> = {
+    updatedAt: serverTimestamp(),
+  };
+  if (data.name !== undefined) updates.name = data.name;
+  if (data.isActive !== undefined) updates.isActive = data.isActive;
+  if (data.nutrition !== undefined) updates.nutrition = data.nutrition;
+  if (data.allergens !== undefined) updates.allergens = data.allergens;
+  if (data.servingSize !== undefined) updates.servingSize = data.servingSize;
+
+  if (data.categoryId !== undefined) {
+    const assignmentsSnap = await getDocs(
+      query(collection(db, 'item_categories'), where('itemId', '==', id))
+    );
+    const targetCat = options?.fromCategoryId;
+    const existing = targetCat
+      ? assignmentsSnap.docs.find((d) => (d.data() as ItemCategory).categoryId === targetCat)
+      : assignmentsSnap.docs[0];
+    const oldCategoryId = existing ? (existing.data() as ItemCategory).categoryId : null;
+
+    if (oldCategoryId !== data.categoryId) {
       const batch = writeBatch(db);
-      
-      // Update the item
-      batch.update(docRef, {
-        ...data,
+      batch.update(baseRef, updates);
+
+      if (existing) batch.delete(existing.ref);
+
+      batch.set(doc(collection(db, 'item_categories')), {
+        itemId: id,
+        categoryId: data.categoryId,
+        createdAt: serverTimestamp(),
         updatedAt: serverTimestamp(),
       });
-      
-      // Decrement old category count
-      const oldCategoryRef = doc(db, 'categories', existingItem.categoryId);
-      batch.update(oldCategoryRef, {
-        itemCount: increment(-1),
-        updatedAt: serverTimestamp(),
-      });
-      
-      // Increment new category count
-      const newCategoryRef = doc(db, 'categories', data.categoryId);
-      batch.update(newCategoryRef, {
-        itemCount: increment(1),
-        updatedAt: serverTimestamp(),
-      });
-      
       await batch.commit();
       return;
     }
   }
-  
-  await updateDoc(docRef, {
-    ...data,
+
+  await updateDoc(baseRef, updates);
+}
+
+export async function updateItemNutrition(id: string, nutrition: Partial<NutritionData>): Promise<void> {
+  const base = await getBaseItem(id);
+  if (!base) throw new Error('Item not found');
+
+  await updateDoc(doc(db, 'base_items', id), {
+    nutrition: { ...base.nutrition, ...nutrition },
     updatedAt: serverTimestamp(),
   });
 }
 
-export async function updateItemNutrition(id: string, nutrition: Partial<NutritionData>): Promise<void> {
-  const docRef = doc(db, 'items', id);
-  const item = await getItem(id);
-  if (!item) throw new Error('Item not found');
-  
-  await updateDoc(docRef, {
-    nutrition: { ...item.nutrition, ...nutrition },
+export async function updateItemAllergens(id: string, allergens: Partial<AllergenFlags>): Promise<void> {
+  const base = await getBaseItem(id);
+  if (!base) throw new Error('Item not found');
+
+  await updateDoc(doc(db, 'base_items', id), {
+    allergens: { ...(base.allergens || emptyAllergenFlags), ...allergens },
     updatedAt: serverTimestamp(),
   });
 }
 
 export async function deleteItem(id: string): Promise<void> {
-  const item = await getItem(id);
-  if (!item) throw new Error('Item not found');
-  
+  const assignmentsSnap = await getDocs(
+    query(collection(db, 'item_categories'), where('itemId', '==', id))
+  );
+
   const batch = writeBatch(db);
-  
-  // Delete the item
-  const itemRef = doc(db, 'items', id);
-  batch.delete(itemRef);
-  
-  // Decrement category count
-  const categoryRef = doc(db, 'categories', item.categoryId);
-  batch.update(categoryRef, {
-    itemCount: increment(-1),
-    updatedAt: serverTimestamp(),
-  });
-  
+  batch.delete(doc(db, 'base_items', id));
+
+  assignmentsSnap.docs.forEach((d) => batch.delete(d.ref));
+
   await batch.commit();
 }
 
@@ -264,42 +460,126 @@ export async function deleteItem(id: string): Promise<void> {
 
 export async function bulkCreateItems(items: MenuItemFormData[]): Promise<string[]> {
   const ids: string[] = [];
-  const categoryUpdates: Record<string, number> = {};
-  
-  // Process in batches of 500 (Firestore limit)
-  const batchSize = 500;
+  const seen = new Map<string, string>();
+
+  const batchSize = 400;
   for (let i = 0; i < items.length; i += batchSize) {
     const batch = writeBatch(db);
     const batchItems = items.slice(i, i + batchSize);
-    
+
     for (const item of batchItems) {
-      const itemRef = doc(collection(db, 'items'));
-      batch.set(itemRef, {
-        ...item,
+      const key = `${(item.name || '').toLowerCase()}|${JSON.stringify(item.nutrition || {})}`;
+      const existingId = seen.get(key);
+      if (existingId) {
+        const assignmentRef = doc(collection(db, 'item_categories'));
+        batch.set(assignmentRef, {
+          itemId: existingId,
+          categoryId: item.categoryId,
+          createdAt: serverTimestamp(),
+          updatedAt: serverTimestamp(),
+        });
+        continue;
+      }
+
+      const baseRef = doc(collection(db, 'base_items'));
+      batch.set(baseRef, {
+        name: item.name,
+        isActive: item.isActive !== false,
+        nutrition: { ...emptyNutrition, ...(item.nutrition || {}) },
+        allergens: item.allergens || emptyAllergenFlags,
+        servingSize: item.servingSize || null,
         createdAt: serverTimestamp(),
         updatedAt: serverTimestamp(),
       });
-      ids.push(itemRef.id);
-      
-      // Track category counts
-      categoryUpdates[item.categoryId] = (categoryUpdates[item.categoryId] || 0) + 1;
+      ids.push(baseRef.id);
+      seen.set(key, baseRef.id);
+
+      const assignmentRef = doc(collection(db, 'item_categories'));
+      batch.set(assignmentRef, {
+        itemId: baseRef.id,
+        categoryId: item.categoryId,
+        createdAt: serverTimestamp(),
+        updatedAt: serverTimestamp(),
+      });
     }
-    
+
     await batch.commit();
   }
-  
-  // Update category counts
-  const countBatch = writeBatch(db);
-  for (const [categoryId, count] of Object.entries(categoryUpdates)) {
-    const categoryRef = doc(db, 'categories', categoryId);
-    countBatch.update(categoryRef, {
-      itemCount: increment(count),
-      updatedAt: serverTimestamp(),
-    });
-  }
-  await countBatch.commit();
-  
+
   return ids;
+}
+
+// ============ MIGRATION (one-time: items -> base_items + item_categories) ============
+
+export async function migrateFromLegacyItems(): Promise<{ baseItems: number; assignments: number }> {
+  const itemsSnap = await getDocs(
+    query(collection(db, 'items'), orderBy('name', 'asc'))
+  );
+
+  if (itemsSnap.empty) {
+    return { baseItems: 0, assignments: 0 };
+  }
+
+  const seen = new Map<string, string>();
+  let baseCount = 0;
+  let assignmentCount = 0;
+  const batchSize = 400;
+
+  for (let i = 0; i < itemsSnap.docs.length; i += batchSize) {
+    const batch = writeBatch(db);
+    const docs = itemsSnap.docs.slice(i, i + batchSize);
+
+    for (const d of docs) {
+      const data = d.data() as Record<string, unknown>;
+      const hasNestedNutrition = data.nutrition && typeof data.nutrition === 'object';
+      const nutrition = hasNestedNutrition
+        ? { ...emptyNutrition, ...(data.nutrition as NutritionData) }
+        : extractNutrition(data);
+      const allergens = extractAllergens(data);
+
+      const key = `${(data.name as string || '').toLowerCase()}|${JSON.stringify(nutrition)}`;
+      let baseId = seen.get(key);
+
+      if (!baseId) {
+        const baseRef = doc(collection(db, 'base_items'));
+        batch.set(baseRef, {
+          name: data.name || '',
+          isActive: data.isActive !== false,
+          nutrition,
+          allergens,
+          servingSize: data.servingSize || null,
+          createdAt: data.createdAt || serverTimestamp(),
+          updatedAt: serverTimestamp(),
+        });
+        baseId = baseRef.id;
+        seen.set(key, baseId);
+        baseCount++;
+      }
+
+      const assignmentRef = doc(collection(db, 'item_categories'));
+      batch.set(assignmentRef, {
+        itemId: baseId,
+        categoryId: data.categoryId || '',
+        createdAt: serverTimestamp(),
+        updatedAt: serverTimestamp(),
+      });
+      assignmentCount++;
+    }
+
+    await batch.commit();
+  }
+
+  return { baseItems: baseCount, assignments: assignmentCount };
+}
+
+export async function hasLegacyItems(): Promise<boolean> {
+  const snap = await getDocs(collection(db, 'items'));
+  return !snap.empty;
+}
+
+export async function hasBaseItems(): Promise<boolean> {
+  const snap = await getDocs(collection(db, 'base_items'));
+  return !snap.empty;
 }
 
 // ============ UTILITY ============

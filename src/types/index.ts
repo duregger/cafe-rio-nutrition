@@ -75,7 +75,29 @@ export interface Category {
   updatedAt: Date;
 }
 
-// Menu Item
+// Base Item (normalized - one per unique item)
+export interface BaseItem {
+  id: string;
+  name: string;
+  isActive: boolean;
+  nutrition: NutritionData;
+  allergens?: AllergenFlags;
+  servingSize?: string;
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+// Item-Category assignment (many-to-many)
+export interface ItemCategory {
+  id: string;
+  itemId: string;
+  categoryId: string;
+  displayOrder?: number;
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+// Menu Item (view model - base item + category context for display)
 export interface MenuItem {
   id: string;
   name: string;
@@ -88,6 +110,10 @@ export interface MenuItem {
   createdAt: Date;
   updatedAt: Date;
 }
+
+// Form types for base items
+export type BaseItemFormData = Omit<BaseItem, 'id' | 'createdAt' | 'updatedAt'>;
+export type ItemCategoryFormData = Omit<ItemCategory, 'id' | 'createdAt' | 'updatedAt'>;
 
 // User
 export interface AppUser {

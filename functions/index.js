@@ -1,4 +1,4 @@
-const functions = require('firebase-functions');
+const { onRequest } = require('firebase-functions/v2/https');
 const admin = require('firebase-admin');
 const express = require('express');
 const cors = require('cors');
@@ -35,8 +35,14 @@ const authenticate = async (req, res, next) => {
         .get();
       
       if (!keyDoc.empty) {
-        req.apiKey = keyDoc.docs[0].data();
-        return next();
+        const keyData = keyDoc.docs[0].data();
+        const expiresAt = keyData.expiresAt?.toDate?.() ?? keyData.expiresAt;
+        if (expiresAt && new Date() > new Date(expiresAt)) {
+          // Key expired - reject
+        } else {
+          req.apiKey = keyData;
+          return next();
+        }
       }
     } catch (error) {
       console.error('API key verification error:', error);
@@ -742,5 +748,5 @@ app.get('/health', (req, res) => {
   res.json({ success: true, message: 'API is healthy', timestamp: new Date().toISOString() });
 });
 
-// Export the Express app as a Cloud Function
-exports.api = functions.https.onRequest(app);
+// Export the Express app as a Cloud Function (2nd gen)
+exports.api = onRequest({ cors: true }, app);

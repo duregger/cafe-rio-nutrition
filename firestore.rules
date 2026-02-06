@@ -24,8 +24,20 @@ service cloud.firestore {
       allow write: if isAdmin();
     }
 
-    // Items - public read, admin write
+    // Items (legacy) - public read, admin write
     match /items/{itemId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Base Items (normalized model) - public read, admin write
+    match /base_items/{itemId} {
+      allow read: if true;
+      allow write: if isAdmin();
+    }
+
+    // Item-Category assignments (many-to-many) - public read, admin write
+    match /item_categories/{assignmentId} {
       allow read: if true;
       allow write: if isAdmin();
     }

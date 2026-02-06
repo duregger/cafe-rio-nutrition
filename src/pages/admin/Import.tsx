@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {
   Card,
   Button,
@@ -13,11 +13,11 @@ import {
   Tabs,
   Tooltip,
 } from 'antd';
-import { UploadOutlined, CloudUploadOutlined } from '@ant-design/icons';
+import { UploadOutlined, CloudUploadOutlined, SwapOutlined } from '@ant-design/icons';
 import type { UploadFile } from 'antd/es/upload/interface';
 import type { MenuItemFormData, NutritionData, AllergenItemFormData, AllergenFlags } from '../../types';
 import { emptyNutrition, emptyAllergenFlags, allergenTypes } from '../../types';
-import { createCategory, bulkCreateItems, getCategories, generateSlug } from '../../services/firestore';
+import { createCategory, bulkCreateItems, getCategories, generateSlug, migrateFromLegacyItems, hasLegacyItems, hasBaseItems } from '../../services/firestore';
 import { 
   createAllergenCategory, 
   bulkCreateAllergenItems, 
@@ -67,6 +67,33 @@ export default function Import() {
   const [allergenPreview, setAllergenPreview] = useState<AllergenImportPreview | null>(null);
   const [allergenImporting, setAllergenImporting] = useState(false);
   const [allergenProgress, setAllergenProgress] = useState(0);
+
+  // Migration state
+  const [migrationStatus, setMigrationStatus] = useState<{ legacy: boolean; base: boolean } | null>(null);
+  const [migrating, setMigrating] = useState(false);
+
+  const checkMigrationStatus = async () => {
+    const [legacy, base] = await Promise.all([hasLegacyItems(), hasBaseItems()]);
+    setMigrationStatus({ legacy, base });
+  };
+
+  useEffect(() => {
+    checkMigrationStatus();
+  }, []);
+
+  const handleMigrate = async () => {
+    setMigrating(true);
+    try {
+      const result = await migrateFromLegacyItems();
+      message.success(`Migration complete: ${result.baseItems} unique items, ${result.assignments} category assignments`);
+      await checkMigrationStatus();
+    } catch (error) {
+      message.error('Migration failed');
+      console.error(error);
+    } finally {
+      setMigrating(false);
+    }
+  };
 
   // ============ NUTRITION IMPORT ============
   
@@ -291,6 +318,46 @@ export default function Import() {
   ];
 
   const tabItems = [
+    {
+      key: 'migration',
+      label: 'Migration',
+      children: (
+        <div className="space-y-6">
+          <Card title="Normalized Data Model Migration">
+            <div className="space-y-4">
+              <Paragraph>
+                Migrate from the legacy <code>items</code> collection to the normalized model: <code>base_items</code> + <code>item_categories</code>.
+                This deduplicates items that appear in multiple categories (e.g. Guacamole in Add-Ins, Custom - ADD, etc.).
+              </Paragraph>
+              {migrationStatus && (
+                <Alert
+                  type={migrationStatus.legacy && !migrationStatus.base ? 'warning' : 'info'}
+                  showIcon
+                  message={
+                    migrationStatus.legacy && !migrationStatus.base
+                      ? 'Legacy data found. Run migration to switch to the normalized model.'
+                      : migrationStatus.base
+                        ? 'Normalized model is active. No migration needed.'
+                        : 'No legacy data found.'
+                  }
+                />
+              )}
+              <div className="mt-6">
+              <Button
+                type="primary"
+                icon={<SwapOutlined />}
+                onClick={handleMigrate}
+                loading={migrating}
+                disabled={!migrationStatus?.legacy || migrationStatus?.base}
+              >
+                Migrate to Normalized Model
+              </Button>
+              </div>
+            </div>
+          </Card>
+        </div>
+      ),
+    },
     {
       key: 'nutrition',
       label: 'Nutrition Data',

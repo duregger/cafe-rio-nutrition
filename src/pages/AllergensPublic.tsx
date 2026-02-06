@@ -13,8 +13,8 @@ import {
 } from 'antd';
 import { SearchOutlined, FilterOutlined } from '@ant-design/icons';
 import type { AllergenItem, AllergenCategory, AllergenFlags } from '../types';
-import { allergenTypes } from '../types';
-import { getAllergenCategories, getActiveAllergenItems } from '../services/allergens';
+import { allergenTypes, emptyAllergenFlags } from '../types';
+import { getCategories, getItems } from '../services/firestore';
 
 const { Title, Text } = Typography;
 
@@ -33,11 +33,11 @@ export default function AllergensPublic() {
       setLoading(true);
       try {
         const [categoriesData, itemsData] = await Promise.all([
-          getAllergenCategories(),
-          getActiveAllergenItems(),
+          getCategories(),
+          getItems(),
         ]);
-        setCategories(categoriesData.filter(c => c.isActive));
-        setItems(itemsData);
+        setCategories(categoriesData.filter(c => c.isActive) as AllergenCategory[]);
+        setItems(itemsData.filter(i => i.isActive).map(i => ({ ...i, allergens: i.allergens ?? emptyAllergenFlags })) as AllergenItem[]);
       } catch (error) {
         console.error('Error loading allergen data:', error);
       } finally {
